@@ -1,0 +1,216 @@
+{
+  "clinical_trial_setup": {
+    "protocol_identification": {
+      "protocol_id": "PRO-2026-NEURO-042",
+      "nct_number": "NCT09876543",
+      "official_title": "A Phase III, Randomized, Double-Blind, Placebo-Controlled Study to Evaluate the Efficacy and Safety of NeuroX in Patients with Early-Stage Alzheimer's Disease",
+      "brief_title": "NeuroX Efficacy and Safety Study in Early Alzheimer's",
+      "phase": "Phase 3",
+      "sponsor": {
+        "name": "Nexus Therapeutics Inc.",
+        "type": "Industry",
+        "lead_sponsor": true
+      }
+    },
+    "study_design": {
+      "allocation": "Randomized",
+      "intervention_model": "Parallel Assignment",
+      "masking": "Double-blind",
+      "masking_roles": [
+        "Participant",
+        "Care Provider",
+        "Investigator",
+        "Outcomes Assessor"
+      ],
+      "primary_purpose": "Treatment",
+      "target_enrollment": 450
+    },
+    "eligibility_criteria": {
+      "minimum_age": "50 Years",
+      "maximum_age": "85 Years",
+      "sex": "All",
+      "inclusion_criteria": [
+        "Diagnosis of early-stage Alzheimer's disease according to NIA-AA criteria.",
+        "MMSE score between 20 and 26 inclusive at the time of screening.",
+        "Patient has a reliable caregiver who accompanies them to study visits."
+      ],
+      "exclusion_criteria": [
+        "History of significant central nervous system vascular disease.",
+        "Current use of any other investigational drug or device within 30 days of screening.",
+        "Known hypersensitivity to NeuroX or its excipients."
+      ]
+    },
+    "study_arms": [
+      {
+        "arm_id": "ARM-001",
+        "label": "NeuroX High Dose",
+        "type": "Experimental",
+        "description": "Participants receive NeuroX 10mg orally once daily for 24 weeks.",
+        "interventions": [
+          {
+            "type": "Drug",
+            "name": "NeuroX",
+            "description": "10mg tablet"
+          }
+        ]
+      },
+      {
+        "arm_id": "ARM-002",
+        "label": "Placebo Control",
+        "type": "Placebo Comparator",
+        "description": "Participants receive matching placebo tablet orally once daily for 24 weeks.",
+        "interventions": [
+          {
+            "type": "Drug",
+            "name": "Placebo",
+            "description": "Matching inert tablet"
+          }
+        ]
+      }
+    ],
+    "laboratory_tests": [
+      {
+        "panel_id": "LAB-HEM-01",
+        "panel_name": "Safety Hematology",
+        "analytes": [
+          {
+            "code": "WBC",
+            "name": "White Blood Cell Count",
+            "unit": "10^3/uL",
+            "method": "Automated Cell Counter"
+          },
+          {
+            "code": "RBC",
+            "name": "Red Blood Cell Count",
+            "unit": "10^6/uL",
+            "method": "Automated Cell Counter"
+          },
+          {
+            "code": "HGB",
+            "name": "Hemoglobin",
+            "unit": "g/dL",
+            "method": "Spectrophotometry"
+          },
+          {
+            "code": "PLT",
+            "name": "Platelets",
+            "unit": "10^3/uL",
+            "method": "Electrical Impedance"
+          }
+        ]
+      },
+      {
+        "panel_id": "LAB-CHM-02",
+        "panel_name": "Safety Chemistry",
+        "analytes": [
+          {
+            "code": "ALT",
+            "name": "Alanine Aminotransferase",
+            "unit": "U/L",
+            "method": "Enzymatic"
+          },
+          {
+            "code": "AST",
+            "name": "Aspartate Aminotransferase",
+            "unit": "U/L",
+            "method": "Enzymatic"
+          },
+          {
+            "code": "CREAT",
+            "name": "Serum Creatinine",
+            "unit": "mg/dL",
+            "method": "Jaffe Method"
+          },
+          {
+            "code": "GLU",
+            "name": "Fasting Plasma Glucose",
+            "unit": "mg/dL",
+            "method": "Hexokinase"
+          }
+        ]
+      }
+    ],
+    "investigational_kits": [
+      {
+        "kit_type_id": "KIT-IP-10MG",
+        "name": "NeuroX 10mg Treatment Kit",
+        "category": "Investigational Product",
+        "description": "Contains a 30-day supply of NeuroX 10mg tablets (35 tablets total including overage).",
+        "storage_conditions": "Store at 20\u00b0C to 25\u00b0C (68\u00b0F to 77\u00b0F); excursions permitted between 15\u00b0C and 30\u00b0C.",
+        "dispensing_unit": "Bottle",
+        "blinded": true
+      },
+      {
+        "kit_type_id": "KIT-PBO-00",
+        "name": "Placebo Matching Kit",
+        "category": "Placebo",
+        "description": "Contains a 30-day supply of matching inert placebo tablets.",
+        "storage_conditions": "Store at 20\u00b0C to 25\u00b0C (68\u00b0F to 77\u00b0F).",
+        "dispensing_unit": "Bottle",
+        "blinded": true
+      }
+    ],
+    "outcome_measures": {
+      "primary_outcomes": [
+        {
+          "measure": "Change from baseline in the Alzheimer's Disease Assessment Scale\u2013Cognitive Subscale (ADAS-Cog 13)",
+          "time_frame": "Baseline to Week 24",
+          "description": "A 13-item scale used to assess cognitive function. Higher scores indicate greater impairment."
+        }
+      ],
+      "secondary_outcomes": [
+        {
+          "measure": "Incidence of treatment-emergent adverse events (TEAEs)",
+          "time_frame": "Baseline to Week 28 (Safety Follow-up)",
+          "description": "Safety and tolerability assessed by physical exams, laboratory tests, and ECGs."
+        }
+      ]
+    },
+    "schedule_of_events": {
+      "visits": [
+        {
+          "visit_id": "V1",
+          "name": "Screening",
+          "window": "Day -14 to Day -1",
+          "procedures": [
+            "Informed Consent",
+            "Medical History",
+            "Inclusion/Exclusion Review",
+            "Physical Examination",
+            "Vital Signs",
+            "MMSE Assessment"
+          ],
+          "required_lab_panels": [
+            "LAB-HEM-01",
+            "LAB-CHM-02"
+          ],
+          "kits_dispensed": [
+            {
+              "kit_type_id": "KIT-LAB-SCR",
+              "quantity": 1
+            }
+          ]
+        },
+        {
+          "visit_id": "V2",
+          "name": "Baseline / Randomization",
+          "window": "Day 1",
+          "procedures": [
+            "Vital Signs",
+            "ADAS-Cog 13 Baseline",
+            "Randomization"
+          ],
+          "required_lab_panels": [
+            "LAB-BIO-03"
+          ],
+          "kits_dispensed": [
+            {
+              "comment": "System uses IRT / IWRS to dispense KIT-IP-10MG or KIT-PBO-00 depending on randomized arm",
+              "quantity": 1
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

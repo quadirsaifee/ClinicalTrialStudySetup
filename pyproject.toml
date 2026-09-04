@@ -1,0 +1,50 @@
+[project]
+name = "ProtocoltoStudySetupJSON"
+version = "0.1.0"
+description = "Agentic clinical trial protocol to study setup JSON generator powered by LangChain, LangGraph, and Pydantic." 
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "Your Name" }
+]
+license = { text = "MIT" }
+dependencies = [
+  "langchain>=0.3.0",
+  "langgraph>=0.2.0",
+  "langchain-openai>=0.3.0",
+  "python-dotenv>=1.0.1",
+  "pydantic>=2.8.0",
+  "pypdf>=4.0.0",
+  "python-docx>=1.1.0",
+  "fastapi>=0.115.0",
+  "uvicorn>=0.30.0",
+  "pytest>=8.0.0",
+  "ruff>=0.5.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest-cov>=5.0.0",
+  "mypy>=1.10.0",
+  "pre-commit>=3.7.0"
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
