@@ -44,9 +44,23 @@ ProtocoltoStudySetupJSON/
 
 ```bash
 python -m venv .venv
-source .venv/bin/activate   # On Windows: .venv\Scripts\activate
-pip install -U pip
-pip install -e .
+# Linux/macOS
+source .venv/bin/activate
+# Windows PowerShell
+.\.venv\Scripts\Activate.ps1
+
+python -m pip install -U pip
+python -m pip install -e .
+```
+
+If you are running directly from the repository without the package installed, set the Python path to include the `src` folder before starting Uvicorn:
+
+```bash
+# Windows cmd
+set PYTHONPATH=src
+
+# Windows PowerShell
+$env:PYTHONPATH = "src"
 ```
 
 ## Run the FastAPI application
@@ -56,6 +70,8 @@ Start the API from the project root:
 ```bash
 python -m uvicorn protocol_to_study_setup_json.api:app --reload
 ```
+
+Important: the app target is `protocol_to_study_setup_json.api:app` and not `:ap`.
 
 Open the interactive API documentation at http://127.0.0.1:8000/docs.
 Use `POST /agent` with `{}` to process the default `Protocol documents` folder.
